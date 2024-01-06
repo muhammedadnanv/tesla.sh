@@ -1,9 +1,9 @@
 pkg update  
 pkg upgrade 
 pkg install nodejs
-///////////////////
-install  code.js
+
+install  code
 git clone https://github.com/muhammedadnanv/tesla.sh.git
-//////////////////////////////////////////////////////////
-running code .js
+
+running code .
 node tesla.js
